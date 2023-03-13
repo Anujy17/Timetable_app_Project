@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TimeActivity">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/purple_500"
+        >
+
+        <ImageView
+
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_baseline_arrow_back_24">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/back"
+            android:gravity="center_vertical"
+            android:text="Enter Detail"
+            android:textColor="@color/white"
+            android:textSize="25dp">
+
+        </TextView>
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <EditText
+            android:id="@+id/title"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:inputType="text"
+            android:textSize="25dp"
+            android:autofillHints="@color/black"
+            android:background="#DCDADF"
+            android:padding="10dp"
+            >
+        </EditText>
+        <TextView
+            android:id="@+id/start"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Starts  9:00 a.m."
+            android:textSize="25dp"
+            android:background="#DCDADF"
+            android:padding="10dp"
+            android:textColor="@color/black">
+        </TextView>
+        <TextView
+            android:id="@+id/end"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ends  10:00 a.m."
+            android:textSize="25dp"
+            android:background="#DCDADF"
+            android:padding="10dp"
+            android:textColor="@color/black">
+        </TextView>
+        <EditText
+            android:id="@+id/description"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#DCDADF"
+            android:hint="Description"
+            android:inputType="textImeMultiLine"
+            android:gravity="top"
+            android:textSize="20dp">
+        </EditText>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:id="@+id/save"
+            android:layout_marginTop="45dp"
+            app:cornerRadius="25dp"
+            android:text="Save"
+            app:iconGravity="textStart">
+
+        </com.google.android.material.button.MaterialButton>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

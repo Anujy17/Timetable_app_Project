@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".forgetActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget Password!"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="51dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="75dp"
+        >
+
+
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Provide your account email for which you want to reset password"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginBottom="55dp">
+
+    </TextView>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:hint="Email"
+        app:endIconMode="clear_text"
+        android:layout_marginTop="8dp"
+        app:startIconDrawable="@drawable/ic_baseline_email_24"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+       <com.google.android.material.textfield.TextInputEditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:inputType="textEmailAddress"
+           android:imeOptions="actionDone"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:id="@+id/submit"
+    android:layout_marginTop="45dp"
+    app:cornerRadius="25dp"
+    android:text="Submit"
+    app:iconGravity="textStart">
+
+</com.google.android.material.button.MaterialButton>
+    <TextView
+        android:id="@+id/login_f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Login"
+        android:textColor="@color/purple_700"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+    </TextView>
+</LinearLayout>
