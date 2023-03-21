@@ -4,8 +4,10 @@ I have made this project during my last semester.
 
 ## Tech Stack
 
-**Languages:** Java, XML
+**Language:** Java, XML
+
 **Database:** Firebase
+
 
 ## Features
 - Login, logout using Email
