@@ -4,8 +4,8 @@ I have made this project during my last semester.
 
 ## Tech Stack
 
-**Languages: ** Java, XML
-**Database: ** Firebase
+*Languages: * Java, XML
+*Database: * Firebase
 
 ## Features
 - Login, logout using Email
